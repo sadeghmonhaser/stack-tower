@@ -162,15 +162,16 @@ class GameView(context: Context) : View(context) {
     private fun drop() {
         val m = moving ?: return
         val top = blocks.last()
-        val left = max(m.x, top.x)
-        val right = min(m.x + m.w, top.x + top.w)
+        val mx = x
+val left = max(mx, top.x)
+val right = min(mx + m.w, top.x + top.w)
         val overlap = right - left
         if (overlap <= 0f) {
-            debris.add(Debris(m.x, y - blocks.size * blockH, m.w, 0f, m.color))
+            debris.add(Debris(mx, y - blocks.size * blockH, m.w, 0f, m.color))
             endGame()
             return
         }
-        val perfect = abs(m.x - top.x) < width * 0.012f && abs(m.w - top.w) < 2f
+        val perfect = abs(mx - top.x) < width * 0.012f && abs(m.w - top.w) < 2f
         val newBlock: Block
         if (perfect) {
             combo++
@@ -179,7 +180,7 @@ class GameView(context: Context) : View(context) {
         } else {
             combo = 0
             newBlock = Block(left, overlap, m.color)
-            val cutLeft = if (m.x < top.x) m.x else right
+            val cutLeft = if (mx < top.x) m.x else right
             val cutW = m.w - overlap
             if (cutW > 0f) debris.add(Debris(cutLeft, y - blocks.size * blockH, cutW, 0f, m.color))
         }
