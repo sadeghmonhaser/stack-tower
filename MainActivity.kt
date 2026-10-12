@@ -12,17 +12,41 @@ import kotlin.math.max
 import kotlin.math.min
 
 class MainActivity : Activity() {
-    private lateinit var game: GameView
+    private var game: GameView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        game = GameView(this)
-        setContentView(game)
+        val sp = getSharedPreferences("crash", Context.MODE_PRIVATE)
+
+        // اگر دفعه قبل crash شده، متن خطا را نشان بده
+        val last = sp.getString("log", null)
+        if (last != null) {
+            sp.edit().remove("log").apply()
+            val tv = android.widget.TextView(this)
+            tv.text = last
+            tv.textSize = 12f
+            tv.setTextColor(Color.WHITE)
+            tv.setBackgroundColor(Color.BLACK)
+            tv.setPadding(24, 80, 24, 24)
+            tv.setTextIsSelectable(true)
+            setContentView(android.widget.ScrollView(this).apply { addView(tv) })
+            return
+        }
+
+        Thread.setDefaultUncaughtExceptionHandler { _, e ->
+            sp.edit().putString("log", android.util.Log.getStackTraceString(e)).commit()
+            android.os.Process.killProcess(android.os.Process.myPid())
+        }
+
+        val g = GameView(this)
+        game = g
+        setContentView(g)
     }
 
-    override fun onPause() { super.onPause(); game.pauseLoop() }
-    override fun onResume() { super.onResume(); game.resumeLoop() }
+    override fun onPause() { super.onPause(); game?.pauseLoop() }
+    override fun onResume() { super.onResume(); game?.resumeLoop() }
 }
+
 
 class GameView(context: Context) : View(context) {
 
