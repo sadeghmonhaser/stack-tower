@@ -100,7 +100,7 @@ class GameView(context: Context) : View(context) {
         val top = blocks.last()
         moving = Block(0f, top.w, colorFor(blocks.size))
         dir = if (blocks.size % 2 == 0) 1 else -1
-        x = if (dir > 0) 0f else width - w
+        x = if (dir > 0) 0f else width - top.w
     }
 
     /** Frame update. Called ~60 times per second. */
