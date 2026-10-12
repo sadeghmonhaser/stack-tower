@@ -1,2 +1,13 @@
-# stack-tower
-Stack Tower: a simple, addictive Android stacking game in Kotlin. Drop the moving blocks at the right time, chain PERFECT drops, and build the tallest tower you can.
+# Stack Tower (اندروید)
+
+بازی ساده و اعتیادآور: بلوک متحرک را در زمان مناسب با ضربه رها کنید تا روی برج قبلی قرار بگیرد.
+- بخش‌های اضافه‌ی بلوک می‌افتد و عرضش کم می‌شود.
+- «PERFECT» پیاپی = ترکیب (combo) و سرعت بیشتر.
+- رکورد روی دستگاه ذخیره می‌شود.
+
+## اجرا
+1. پوشه `StackTower` را در Android Studio (Hedgehog یا جدیدتر) باز کنید.
+2. Sync Gradle را بزنید و روی گوشی/شبیه‌ساز Run کنید.
+3. یا APK: `./gradlew assembleDebug` → `app/build/outputs/apk/debug/`
+
+کد کاملاً بدون وابستگی خارجی است (فقط Android SDK).
