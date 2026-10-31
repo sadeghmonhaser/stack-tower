@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night sky stack — design tokens -->
+    <color name="sky_bottom">#0A0C1A</color>
+    <color name="sky_theme0_top">#4A5C9A</color>
+    <color name="sky_theme1_top">#D95632</color>
+    <color name="sky_theme1_bottom">#3A1424</color>
+    <color name="sky_theme2_top">#2897B0</color>
+    <color name="sky_theme2_bottom">#061A24</color>
+    <color name="sky_theme3_top">#42B86E</color>
+    <color name="sky_theme3_bottom">#0E1A32</color>
+    <color name="overlay_scrim">#D90B0E1A</color>
+
+    <color name="surface_card">#EE1A2238</color>
+    <color name="surface_card_stroke">#334A6E</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#D9E2F5</color>
+    <color name="text_muted">#A0AABF</color>
+    <color name="text_hint">#B3BED4</color>
+
+    <color name="accent_primary">#5B8DEF</color>
+    <color name="accent_primary_dark">#3D6FD4</color>
+    <color name="accent_secondary_stroke">#6B7FA8</color>
+
+    <color name="button_secondary">#252E48</color>
+    <color name="button_secondary_stroke">#45568C</color>
+
+    <color name="chrome_pause">#2A3558</color>
+    <color name="chrome_pause_stroke">#4A5B8C</color>
+
+    <color name="success_record">#FFC107</color>
+    <color name="tutorial_accent">#FFD770</color>
+    <color name="input_field_bg">#141B2E</color>
+    <color name="surface_inset">#121A2E</color>
+    <color name="divider_subtle">#33FFFFFF</color>
+</resources>

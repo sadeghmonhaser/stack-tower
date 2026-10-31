@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="card_width_fraction">88%</fraction>
+    <fraction name="overlay_max_height_fraction">90%</fraction>
+</resources>

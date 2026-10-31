@@ -1,0 +1,12 @@
+.gradle/
+build/
+local.properties
+release-signing/
+*.apk
+*.aab
+.idea/caches/
+.idea/deviceManager.xml
+.idea/deploymentTargetSelector.xml
+captures/
+*.iml
+.DS_Store

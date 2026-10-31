@@ -1,4 +1,61 @@
 <resources>
-    <string name="app_name">Stack Tower</string>
-</resources>
+    <string name="app_name">برج‌چین</string>
+    <string name="about_text">برج‌چین؛ بازی جذاب ساخت برج با قرار دادن دقیق بلوک‌ها روی یکدیگر.
 
+ویرایش، توسعه و عرضه: S4D3X</string>
+    <string name="menu_title">منوی بازی</string>
+    <string name="resume">ادامه بازی</string>
+    <string name="new_game">بازی تازه</string>
+    <string name="settings">تنظیمات</string>
+    <string name="rate_app">امتیاز در مایکت</string>
+    <string name="about">درباره بازی</string>
+    <string name="sound_fx">جلوه‌های صوتی</string>
+    <string name="haptic_feedback">بازخورد لمسی (ویبره)</string>
+    <string name="close">بستن</string>
+    <string name="game_over">پایان بازی</string>
+    <string name="new_record">رکورد جدید!</string>
+    <string name="pause_menu">منو</string>
+    <string name="pause_menu_content_description">باز کردن منوی بازی</string>
+    <string name="drop_hint">برای رها کردن ضربه بزنید</string>
+    <string name="myket_not_installed">برای ثبت نظر، برنامه مایکت را نصب کنید.</string>
+    <string name="score_label">امتیاز: %1$s</string>
+    <string name="best_label">رکورد: %1$s</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="share_score">اشتراک‌گذاری</string>
+    <string name="share_text">من در بازی برج‌چین امتیاز %1$s را کسب کردم! 🏰 آیا می‌توانی رکوردم را بشکنی؟</string>
+    <string name="tap_to_start">برای شروع ضربه بزنید</string>
+    <string name="perfect">عالی!</string>
+    <string name="profile">پروفایل و رکوردها</string>
+    <string name="profile_description">نام بازیکن را ثبت کنید و آمار بازی‌های خود را ببینید. اطلاعات فقط روی همین دستگاه ذخیره می‌شود.</string>
+    <string name="profile_name_hint">نام بازیکن</string>
+    <string name="profile_name_required">نام بازیکن را وارد کنید.</string>
+    <string name="profile_saved">پروفایل ذخیره شد.</string>
+    <string name="save_profile">ذخیره نام بازیکن</string>
+    <string name="profile_stats">بهترین رکورد: %1$s\nتعداد بازی‌ها: %2$s\nآخرین امتیاز: %3$s</string>
+    <string name="start_game">شروع بازی</string>
+    <string name="go_home">صفحه اصلی</string>
+    <string name="home_more_options">گزینه‌های بیشتر</string>
+    <string name="home_stat_record">بهترین رکورد</string>
+    <string name="game_over_your_score">امتیاز این بازی</string>
+    <string name="score_value">%1$s</string>
+    <string name="welcome">خوش آمدید!</string>
+    <string name="welcome_player">خوش آمدی، %1$s!</string>
+    <string name="how_to_play">راهنمای بازی</string>
+    <string name="tutorial_text">بلوک به چپ و راست حرکت می‌کند.\n\nوقتی بالای برج قرار گرفت، برای رها کردن آن روی صفحه ضربه بزنید.\n\nبخش‌هایی که بیرون برج بمانند می‌افتند؛ هرچه دقیق‌تر باشید، ساخت برج آسان‌تر است!</string>
+    <string name="understood">متوجه شدم</string>
+    <string name="recent_scores">بازی‌های اخیر: %1$s</string>
+    <string name="no_scores">هنوز بازی ثبت نشده است</string>
+    <string name="results_bests">رکورد قبلی: %1$s\nبهترین رکورد: %2$s</string>
+    <string name="themes">رنگ آسمان</string>
+    <string name="themes_hint">با رسیدن به رکوردهای بالاتر، رنگ‌های تازه را آزاد کنید.</string>
+    <string name="theme_default">آسمان اصلی</string>
+    <string name="theme_sunset">غروب</string>
+    <string name="theme_ocean">اقیانوس</string>
+    <string name="theme_aurora">شفق</string>
+    <string name="theme_selected">%1$s — انتخاب‌شده</string>
+    <string name="theme_locked">%1$s — باز شدن با رکورد %2$s</string>
+    <string name="theme_locked_toast">برای «%1$s» به رکورد %2$s نیاز دارید.</string>
+    <string name="theme_unlocked">رکورد جدید! رنگ آزاد شد: %1$s</string>
+    <string name="tutorial_visual">↔  ▰▰▰  ↔\n↓
+▰▰▰▰▰</string>
+</resources>
